@@ -70,7 +70,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 border-0 shadow-lg overflow-hidden bg-gradient-to-br from-elvan-white to-elvan-light-gray/50 hover:from-elvan-light-gray/30 hover:to-elvan-white flex flex-col h-full min-h-[600px]" // Added min-height
+              className="group hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 border-0 shadow-lg overflow-hidden bg-gradient-to-br from-elvan-white to-elvan-light-gray/50 hover:from-elvan-light-gray/30 hover:to-elvan-white flex flex-col h-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px]" // Adjusted min-height with breakpoints
             >
               <div className="relative h-56 overflow-hidden">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700" />
