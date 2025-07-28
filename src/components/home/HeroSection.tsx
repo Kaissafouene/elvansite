@@ -52,7 +52,7 @@ const HeroSection = () => {
         
         {/* Description avec animation */}
         <p className="text-xl md:text-2xl text-elvan-light-gray mb-12 max-w-4xl mx-auto leading-relaxed opacity-90 animate-fade-in animation-delay-600" itemProp="description">
-          Offrez à votre voiture le luxe qu’elle mérite. ELVAN Detailing, service mobile haut de gamme à La Marsa – Nous venons à vous, votre véhicule ressort comme neuf.
+          Offrez à votre voiture le luxe qu’elle mérite. ELVAN Detailing, service mobile haut de gamme – Nous venons à vous, votre véhicule ressort comme neuf.
         </p>
         
         {/* Boutons d'action avec animations */}
