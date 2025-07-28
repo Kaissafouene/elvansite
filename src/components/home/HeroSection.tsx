@@ -52,8 +52,7 @@ const HeroSection = () => {
         
         {/* Description avec animation */}
         <p className="text-xl md:text-2xl text-elvan-light-gray mb-12 max-w-4xl mx-auto leading-relaxed opacity-90 animate-fade-in animation-delay-600" itemProp="description">
-          Centre de detailing automobile haut de gamme à La Marsa. 
-          Transformez votre véhicule avec nos services professionnels d'exception.
+          Service mobile de detailing automobile – Nettoyage intérieur et extérieur haut de gamme à domicile.
         </p>
         
         {/* Boutons d'action avec animations */}
