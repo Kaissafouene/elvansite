@@ -31,13 +31,13 @@ const Header = () => {
           {/* Logo (MODIFIÉ) */}
           <Link to="/" className="flex items-center group">
             <div className="relative">
-              {/* La classe h-14 a été changée en h-16 pour agrandir le logo */}
+              {/* La classe a été changée pour une taille personnalisée de 72px */}
               <img 
                 src="/lovable-uploads/05a477d1-3844-4ed9-aeb0-22816b7638c0.png" 
                 alt="ELVAN Detailing - Centre de detailing automobile à La Marsa" 
-                className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" 
-                width="64" 
-                height="64" 
+                className="h-[72px] w-auto transition-transform duration-300 group-hover:scale-105" 
+                width="72" 
+                height="72" 
                 loading="eager" 
               />
               <div className="absolute -inset-2 bg-gradient-to-r from-elvan-navy/20 to-elvan-black/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md mx-0"></div>
