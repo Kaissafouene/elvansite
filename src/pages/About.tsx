@@ -1,4 +1,3 @@
-
 import Layout from "../components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,8 +33,8 @@ const About = () => {
     <Layout>
       <PageHead 
         title="À Propos d'ELVAN Detailing - Centre Automobile Haut de Gamme | La Marsa"
-        description="Découvrez ELVAN Detailing, centre de detailing automobile fondé en 2025 à La Marsa. Expertise, qualité et satisfaction client depuis notre création."
-        keywords="à propos ELVAN, histoire detailing automobile, centre La Marsa, expertise automobile, qualité service"
+        description="Découvrez ELVAN Detailing, centre de detailing automobile mobile fondé en 2025 à La Marsa. Expertise, qualité et satisfaction client depuis notre création."
+        keywords="à propos ELVAN, histoire detailing mobile, service automobile à domicile, centre La Marsa, expertise automobile, qualité service"
         canonicalUrl="https://elvan-detailing.com/about"
       />
       <div className="min-h-screen">
@@ -56,13 +55,13 @@ const About = () => {
               À Propos d'ELVAN
             </h1>
             <p className="text-xl text-elvan-light-gray max-w-2xl mx-auto animate-fade-in animation-delay-300">
-              Centre de detailing automobile haut de gamme fondé en 2025 à La Marsa, 
+              Centre de detailing automobile mobile haut de gamme, 
               spécialisé dans l'excellence et la satisfaction client.
             </p>
           </div>
         </section>
 
-        {/* Company Story */}
+        {/* Company Story - MISE À JOUR */}
         <section className="py-20 bg-elvan-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -74,22 +73,19 @@ const About = () => {
 
             <div className="prose prose-lg max-w-none text-elvan-gray">
               <p className="text-xl leading-relaxed mb-8">
-                ELVAN est né d'une passion pour l'automobile et d'un désir d'excellence. 
-                Fondé en 2025 à La Marsa, notre centre de detailing automobile s'est rapidement 
-                imposé comme une référence dans le domaine du soin automobile haut de gamme en Tunisie.
+                Fondé en 2025 à La Marsa, ELVAN Detailing est né d’une passion profonde pour l’automobile et d’une volonté d’excellence. Plus qu’un simple centre de detailing, ELVAN est un service mobile haut de gamme, pensé pour offrir à chaque client une expérience pratique, personnalisée et irréprochable.
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                Notre philosophie repose sur trois piliers fondamentaux : la qualité irréprochable 
-                de nos prestations, l'utilisation de produits premium respectueux de l'environnement, 
-                et un service client personnalisé qui place la satisfaction de nos clients au cœur 
-                de nos préoccupations.
+                Notre ambition est claire : devenir le leader de l’esthétique automobile mobile en Tunisie, en alliant qualité supérieure, innovation et professionnalisme. Grâce à des équipements de pointe et des produits premium respectueux de l’environnement, nous redonnons à chaque véhicule toute sa splendeur, où que vous soyez — à domicile ou sur votre lieu de travail.
+              </p>
+
+              <p className="text-lg leading-relaxed mb-8">
+                Notre mission est de dépoussiérer les standards du detailing en Tunisie, en mettant en avant la commodité, la précision du travail, et une relation client fondée sur la confiance, l'intégrité et la satisfaction totale.
               </p>
 
               <p className="text-lg leading-relaxed">
-                Nous croyons que chaque véhicule mérite un traitement d'exception. C'est pourquoi 
-                nous mettons tout notre savoir-faire et notre passion au service de votre automobile, 
-                pour lui redonner tout son éclat et prolonger sa durée de vie.
+                Chez ELVAN, nous croyons que chaque voiture mérite un traitement d’exception. C’est pourquoi nous mettons toute notre expertise au service de votre automobile, pour sublimer son apparence et prolonger sa durée de vie, sans que vous ayez à bouger de chez vous.
               </p>
             </div>
           </div>
