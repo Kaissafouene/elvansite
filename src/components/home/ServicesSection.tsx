@@ -70,25 +70,25 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 border-0 shadow-lg overflow-hidden bg-gradient-to-br from-elvan-white to-elvan-light-gray/50 hover:from-elvan-light-gray/30 hover:to-elvan-white flex flex-col h-full"
+              className="group hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-4 border-0 shadow-lg overflow-hidden bg-gradient-to-br from-elvan-white to-elvan-light-gray/50 hover:from-elvan-light-gray/30 hover:to-elvan-white flex flex-col h-full min-h-[600px]" // Added min-height
             >
               <div className="relative h-56 overflow-hidden">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-elvan-black/70 via-elvan-black/30 to-transparent group-hover:from-elvan-navy/70 transition-all duration-500"></div>
-                
+
                 {/* Icône flottante */}
                 <div className="absolute top-4 right-4 p-4 backdrop-blur-sm rounded-full shadow-lg group-hover:shadow-xl transition-all duration-500 bg-gray-100">
                   <div className="group-hover:text-elvan-white transition-colors duration-300">
                     {service.icon}
                   </div>
                 </div>
-                
+
                 {/* Badge de prix */}
                 <div className="absolute bottom-4 left-4 bg-elvan-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
                   <span className="text-elvan-navy font-bold text-sm">{service.price}</span>
                 </div>
               </div>
-              
+
               <CardContent className="p-8 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-elvan-black mb-4 group-hover:text-elvan-navy transition-colors duration-300">
                   {service.title}
@@ -96,16 +96,22 @@ const ServicesSection = () => {
                 <p className="text-elvan-gray mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                
+
                 {/* Liste des fonctionnalités */}
                 <ul className="space-y-2 mb-8">
-                  {service.features.map((feature, i) => <li key={i} className="flex items-center text-sm text-elvan-gray">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-center text-sm text-elvan-gray">
                       <div className="w-2 h-2 bg-elvan-navy rounded-full mr-3 group-hover:bg-elvan-black transition-colors"></div>
                       {feature}
-                    </li>)}
+                    </li>
+                  ))}
                 </ul>
-                
-                <Button variant="elvan-outline" className="w-full group-hover:bg-elvan-navy group-hover:text-elvan-white group-hover:shadow-lg transition-all duration-500 transform group-hover:scale-105 mt-auto" asChild>
+
+                <Button
+                  variant="elvan-outline"
+                  className="w-full group-hover:bg-elvan-navy group-hover:text-elvan-white group-hover:shadow-lg transition-all duration-500 transform group-hover:scale-105 mt-auto"
+                  asChild
+                >
                   <Link to="/services">
                     En savoir plus
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
